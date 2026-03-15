@@ -40,7 +40,7 @@
           <span class="product-tag tag-live">Live on QuickSuite</span>
         </div>
       </div>
-      <p class="product-desc">A QuickSuite Chat Agent that lets Fatafat (MX miniTV) teams ask analytics questions in plain English and get instant SQL-backed answers — no dashboards, no SQL, no context-switching.</p>
+      <p class="product-desc">A QuickSuite Chat Agent that lets Fatafat (AMXP) teams ask analytics questions in plain English and get instant SQL-backed answers — no dashboards, no SQL, no context-switching.</p>
       <div class="product-features">
         <span class="pill">💬 Natural Language Queries</span>
         <span class="pill">📧 Email from Chat</span>
@@ -50,7 +50,7 @@
       </div>
       <p class="product-detail">Built for marketing, merchandising, content, product, finance, engineering, and leadership teams across MX. The agent understands Fatafat's full data schema — tables, columns, metrics, query patterns — and handles complex funnels, cohorts, and time-series analysis in a single conversation. It can send analysis as email directly from chat, save to QuickSuite Spaces, and download as files.</p>
       <div class="product-tech">
-        <span>QuickSuite</span><span>Claude</span><span>Redshift</span><span>MCP Protocol</span><span>Federate OAuth2</span>
+        <span>QuickSuite</span><span>Redshift</span><span>MCP Protocol</span><span>Federate OAuth2</span>
       </div>
       <div class="product-media">
         <div class="video-box">
@@ -77,10 +77,10 @@
         <div class="product-icon">⚡</div>
         <div>
           <h2>SQL Client MCP Online</h2>
-          <span class="product-tag tag-live">Live on AWS Lambda</span>
+          <span class="product-tag tag-live">Live on QuickSuite</span>
         </div>
       </div>
-      <p class="product-desc">An online MCP server deployed on AWS Lambda that bridges QuickSuite AI agents with Redshift databases — enabling any agent to query real data in real time via the Model Context Protocol.</p>
+      <p class="product-desc">An online MCP server on QuickSuite that solves the goldfish memory problem for AI agents. Any model or agent on QuickSuite can connect to this server and instantly become fully context-aware of the Fatafat (AMXP) business — schema, metrics, query patterns, and domain knowledge — all loaded on demand via built-in presets.</p>
       <div class="product-features">
         <span class="pill">🔌 Streamable HTTP Transport</span>
         <span class="pill">🔐 Federate OAuth2 + JWT</span>
@@ -89,7 +89,7 @@
         <span class="pill">🛡️ SQL Injection Protection</span>
         <span class="pill">📈 X-Ray Tracing</span>
       </div>
-      <p class="product-detail">Implements the full MCP Streamable HTTP spec — initialize handshake, session management, tool discovery, and execution. Users ask questions in QuickSuite, the AI generates SQL, and this service executes it against Redshift and returns formatted results. Includes an auth detection hack that was discovered through 30+ retries to get QuickSuite's OAuth flow working correctly. Also serves schema context presets from S3 so the AI writes better queries.</p>
+      <p class="product-detail">The key innovation is built-in context presets — domain knowledge files that any agent loads on demand, solving the goldfish memory problem where AI models forget everything between conversations. Built specifically for the Fatafat business, the presets encode the full AMXP data schema, required filters, query patterns, and metric definitions. Any QuickSuite agent that connects to this server is immediately fluent in Fatafat analytics. Under the hood, it implements the full MCP Streamable HTTP spec with Federate OAuth2 authentication.</p>
       <div class="product-tech">
         <span>AWS Lambda</span><span>API Gateway</span><span>Redshift</span><span>Secrets Manager</span><span>S3</span><span>MCP Protocol</span><span>CDK</span><span>X-Ray</span>
       </div>
@@ -109,10 +109,10 @@
         <div class="product-icon">🔧</div>
         <div>
           <h2>SQL Client MCP Local</h2>
-          <span class="product-tag tag-shipped">Published on npm</span>
+          <span class="product-tag tag-shipped">Published on npm-pretty-much</span>
         </div>
       </div>
-      <p class="product-desc">A local MCP server that runs on your machine and connects AI coding assistants (Kiro, Claude Desktop, etc.) directly to PostgreSQL and Redshift databases — with IAM auth, Secrets Manager, and team schema presets.</p>
+      <p class="product-desc">A local MCP server that provides a framework for solving the goldfish memory problem for AI coding assistants. Connects Kiro, Claude Desktop, and other tools directly to PostgreSQL and Redshift — with on-demand schema context presets that give agents persistent domain knowledge across conversations.</p>
       <div class="product-features">
         <span class="pill">🗄️ PostgreSQL &amp; Redshift</span>
         <span class="pill">🔑 3 Auth Methods</span>
@@ -121,7 +121,7 @@
         <span class="pill">🚇 SSH Tunnel Support</span>
         <span class="pill">8 SQL Tools</span>
       </div>
-      <p class="product-detail">Supports direct credentials, IAM temporary credentials (auto-refreshed every 14 min), and AWS Secrets Manager — so teams can share database access without passing passwords around. Schema context presets let you bundle your team's domain knowledge (table docs, required filters, query patterns) as markdown or JSON files that the AI loads before writing SQL.</p>
+      <p class="product-detail">The framework introduces presets — bundled domain knowledge files (markdown or JSON) that agents load on demand before writing SQL. Teams encode their table docs, required filters, query patterns, and business rules into presets, and any AI assistant that connects instantly understands the domain. Supports direct credentials, IAM temporary credentials (auto-refreshed every 14 min), and AWS Secrets Manager for flexible auth.</p>
       <div class="product-tech">
         <span>Node.js</span><span>MCP SDK</span><span>PostgreSQL</span><span>Redshift</span><span>IAM</span><span>Secrets Manager</span><span>TypeScript</span>
       </div>
