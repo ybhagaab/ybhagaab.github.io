@@ -3,214 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gen AI Portfolio — AB Bhagat</title>
+  <title>AB Bhagat — Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="topbar">
-    <span class="topbar-name">AB Bhagat</span>
-    <div class="topbar-links">
-      <a href="#products">Projects</a>
-      <a href="https://code.amazon.com/users/ybhagaab/activity" target="_blank">Code</a>
-      <a href="https://amazon.enterprise.slack.com/archives/C0AKP4P1QF6" target="_blank">Slack</a>
+  <!-- Nav -->
+  <nav>
+    <span class="nav-name">AB Bhagat</span>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#personal">Side Projects</a>
+      <a href="https://github.com/ybhagaab" target="_blank" rel="noopener">GitHub</a>
     </div>
   </nav>
 
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-inner">
-      <p class="hero-label">Gen AI Portfolio</p>
-      <h1>Building AI tools that<br>make work <span class="gradient-text">feel effortless</span></h1>
-      <p class="hero-sub">Four products spanning natural language analytics, MCP infrastructure, and multilingual video dubbing — built with Claude, Kiro, and a lot of late nights.</p>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Products</span></div>
-        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">AI Models</span></div>
-        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Platforms</span></div>
+    <div class="hero-label">Product Leader · AI Builder</div>
+    <h1>I find the friction.<br>Then I build the tool<br>that <em>removes</em> it.</h1>
+    <p class="hero-sub">Seven AI products shipped in 12 months — from natural language analytics to voice-cloning dubbing pipelines. Each one started with a real problem I watched people struggle with, and ended with working software they use every day.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Products shipped</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">AI models used</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">200+</span>
+        <span class="stat-label">Users enabled</span>
       </div>
     </div>
   </section>
 
-  <section class="products" id="products">
-
-    <article class="product-card" id="fatafat">
-      <div class="product-header">
-        <div class="product-icon">🤖</div>
-        <div>
-          <h2>Fatafat Analytics Agent</h2>
-          <span class="product-tag tag-live">Live on QuickSuite</span>
-        </div>
-      </div>
-      <p class="product-desc">A QuickSuite Chat Agent that lets Fatafat (AMXP) teams ask analytics questions in plain English and get instant SQL-backed answers — no dashboards, no SQL, no context-switching.</p>
-      <div class="product-features">
-        <span class="pill">💬 Natural Language Queries</span>
-        <span class="pill">📧 Email from Chat</span>
-        <span class="pill">📥 Download &amp; Save</span>
-        <span class="pill">🔄 Multi-Step Analysis</span>
-        <span class="pill">📂 Custom Spaces</span>
-      </div>
-      <p class="product-detail">Built for marketing, merchandising, content, product, finance, engineering, and leadership teams across MX. The agent understands Fatafat's full data schema — tables, columns, metrics, query patterns — and handles complex funnels, cohorts, and time-series analysis in a single conversation. It can send analysis as email directly from chat, save to QuickSuite Spaces, and download as files.</p>
-      <div class="product-tech">
-        <span>QuickSuite</span><span>Redshift</span><span>MCP Protocol</span><span>Federate OAuth2</span>
-      </div>
-      <div class="product-media">
-        <div class="video-box">
-          <video controls preload="metadata" poster="https://d3eijncil08ojn.cloudfront.net/thumb-agent.jpg">
-            <source src="https://d3eijncil08ojn.cloudfront.net/agent-email-demo.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">Agent answers a query and sends the analysis as email — all from chat</p>
-        </div>
-        <div class="video-box">
-          <video controls preload="metadata" poster="https://d3eijncil08ojn.cloudfront.net/thumb-mcp.jpg">
-            <source src="https://d3eijncil08ojn.cloudfront.net/mcp-action-demo.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">PRD writing agent pulls real benchmark data via the MCP action</p>
-        </div>
-      </div>
-      <div class="product-links">
-        <a href="https://ask.quick.amazon.dev/" class="link-btn primary" target="_blank">Open QuickSuite →</a>
-        <a href="https://d3eijncil08ojn.cloudfront.net" class="link-btn secondary" target="_blank">Request Access</a>
-      </div>
-    </article>
-
-    <article class="product-card" id="mcp-online">
-      <div class="product-header">
-        <div class="product-icon">⚡</div>
-        <div>
-          <h2>SQL Client MCP Online</h2>
-          <span class="product-tag tag-live">Live on QuickSuite</span>
-        </div>
-      </div>
-      <p class="product-desc">An online MCP server on QuickSuite that solves the goldfish memory problem for AI agents. Any model or agent on QuickSuite can connect to this server and instantly become fully context-aware of the Fatafat (AMXP) business — schema, metrics, query patterns, and domain knowledge — all loaded on demand via built-in presets.</p>
-      <div class="product-features">
-        <span class="pill">🔌 Streamable HTTP Transport</span>
-        <span class="pill">🔐 Federate OAuth2 + JWT</span>
-        <span class="pill">📊 6 SQL Tools</span>
-        <span class="pill">📋 Schema Context Presets</span>
-        <span class="pill">🛡️ SQL Injection Protection</span>
-        <span class="pill">📈 X-Ray Tracing</span>
-      </div>
-      <p class="product-detail">The key innovation is built-in context presets — domain knowledge files that any agent loads on demand, solving the goldfish memory problem where AI models forget everything between conversations. Built specifically for the Fatafat business, the presets encode the full AMXP data schema, required filters, query patterns, and metric definitions. Any QuickSuite agent that connects to this server is immediately fluent in Fatafat analytics. Under the hood, it implements the full MCP Streamable HTTP spec with Federate OAuth2 authentication.</p>
-      <div class="product-tech">
-        <span>AWS Lambda</span><span>API Gateway</span><span>Redshift</span><span>Secrets Manager</span><span>S3</span><span>MCP Protocol</span><span>CDK</span><span>X-Ray</span>
-      </div>
-      <div class="product-arch">
-        <pre class="arch-diagram">QuickSuite → Federate OAuth2 → API Gateway → Lambda (VPC)
-                                                 ├── Secrets Manager
-                                                 ├── S3 (Schema Presets)
-                                                 └── Redshift Serverless</pre>
-      </div>
-      <div class="product-links">
-        <a href="https://d3eijncil08ojn.cloudfront.net" class="link-btn primary" target="_blank">Request Access →</a>
-      </div>
-    </article>
-
-    <article class="product-card" id="mcp-local">
-      <div class="product-header">
-        <div class="product-icon">🔧</div>
-        <div>
-          <h2>SQL Client MCP Local</h2>
-          <span class="product-tag tag-shipped">Published on npm-pretty-much</span>
-        </div>
-      </div>
-      <p class="product-desc">A local MCP server that provides a framework for solving the goldfish memory problem for AI coding assistants. Connects Kiro, Claude Desktop, and other tools directly to PostgreSQL and Redshift — with on-demand schema context presets that give agents persistent domain knowledge across conversations.</p>
-      <div class="product-features">
-        <span class="pill">🗄️ PostgreSQL &amp; Redshift</span>
-        <span class="pill">🔑 3 Auth Methods</span>
-        <span class="pill">📋 Schema Context Presets</span>
-        <span class="pill">🔒 SSL/TLS Modes</span>
-        <span class="pill">🚇 SSH Tunnel Support</span>
-        <span class="pill">8 SQL Tools</span>
-      </div>
-      <p class="product-detail">The framework introduces presets — bundled domain knowledge files (markdown or JSON) that agents load on demand before writing SQL. Teams encode their table docs, required filters, query patterns, and business rules into presets, and any AI assistant that connects instantly understands the domain. Supports direct credentials, IAM temporary credentials (auto-refreshed every 14 min), and AWS Secrets Manager for flexible auth.</p>
-      <div class="product-tech">
-        <span>Node.js</span><span>MCP SDK</span><span>PostgreSQL</span><span>Redshift</span><span>IAM</span><span>Secrets Manager</span><span>TypeScript</span>
-      </div>
-      <div class="product-links">
-        <a href="https://console.harmony.a2z.com/mcp-registry/server/sql-context-presets-mcp" class="link-btn primary" target="_blank">MCP Registry →</a>
-        <a href="https://github.com/ybhagaab/sql-context-mcp" class="link-btn secondary" target="_blank">GitHub</a>
-      </div>
-    </article>
-
-    <article class="product-card" id="dubground">
-      <div class="product-header">
-        <div class="product-icon">🎬</div>
-        <div>
-          <h2>DubGround</h2>
-          <span class="product-tag tag-dev">In Development</span>
-        </div>
-      </div>
-      <p class="product-desc">An end-to-end video dubbing platform that detects speakers, clones their voices, and generates multilingual dubbed audio — preserving each speaker's vocal identity across languages.</p>
-      <div class="product-features">
-        <span class="pill">🎙️ Speaker Diarization</span>
-        <span class="pill">📝 Dual ASR Engines</span>
-        <span class="pill">🌍 Contextual Translation</span>
-        <span class="pill">🗣️ Voice Cloning</span>
-        <span class="pill">🔊 Text-to-Speech</span>
-        <span class="pill">🔄 Speech-to-Speech</span>
-        <span class="pill">⚡ Real-time Progress</span>
-        <span class="pill">🧪 Model A/B Testing</span>
-      </div>
-      <p class="product-detail">Video dubbing traditionally requires expensive voice actors and manual audio engineering per language. DubGround automates the full pipeline — from speaker detection through voice cloning to synthesis. Two workflows: the primary pipeline (diarization → ASR → contextual translation → voice cloning → synthesis) and an alternative SeamlessM4T speech-to-speech path that skips the pipeline entirely. The translation layer uses Qwen 3.5 4B with overlapping-window batching to preserve cross-segment coherence and dramatic fidelity. TTS uses lazy-loaded models with LRU eviction on a single T4 GPU — two model variants (~5.2GB each) swap in/out of 16GB VRAM on demand.</p>
-      <div class="product-detail-sub">
-        <h3>The Pipeline</h3>
-        <div class="pipeline">
-          <span class="pipeline-step">Upload</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">Audio Extract</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">Diarization</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">ASR</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">Translation</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">Voice Clone</span>
-          <span class="pipeline-arrow">→</span>
-          <span class="pipeline-step">Dubbed Audio</span>
-        </div>
-      </div>
-      <div class="model-grid">
-        <h3>AI Models</h3>
-        <div class="model-cards">
-          <div class="model-item">
-            <span class="model-name">pyannote-audio</span>
-            <span class="model-role">Speaker Diarization</span>
-          </div>
-          <div class="model-item">
-            <span class="model-name">Omnilingual 7B</span>
-            <span class="model-role">Primary ASR (unlimited length)</span>
-          </div>
-          <div class="model-item">
-            <span class="model-name">Qwen3-ASR 1.7B</span>
-            <span class="model-role">ASR + Forced Alignment</span>
-          </div>
-          <div class="model-item">
-            <span class="model-name">Qwen 3.5 4B</span>
-            <span class="model-role">Contextual Translation</span>
-          </div>
-          <div class="model-item">
-            <span class="model-name">Qwen3-TTS 1.7B</span>
-            <span class="model-role">Voice Cloning &amp; Design</span>
-          </div>
-          <div class="model-item">
-            <span class="model-name">SeamlessM4T v2</span>
-            <span class="model-role">Speech-to-Speech (alt path)</span>
-          </div>
-        </div>
-      </div>
-      <div class="product-tech">
-        <span>React</span><span>Node.js</span><span>FastAPI</span><span>BullMQ</span><span>Prisma</span><span>PostgreSQL</span><span>Redis</span><span>Socket.io</span><span>AWS ECS</span><span>S3</span><span>GPU (T4)</span>
-      </div>
-      <div class="product-links">
-        <a href="https://d15ny0xmu7ygib.cloudfront.net/" class="link-btn primary" target="_blank">Try DubGround →</a>
-      </div>
-    </article>
-
+  <!-- Philosophy -->
+  <section class="philosophy">
+    <div class="phil-item">
+      <span class="phil-num">01</span>
+      <h3>See the problem clearly</h3>
+      <p>Spend time with the people who feel the pain. Understand what they actually do, not what the dashboard says they do.</p>
+    </div>
+    <div class="phil-item">
+      <span class="phil-num">02</span>
+      <h3>Build the smallest thing that works</h3>
+      <p>Ship a working tool, not a deck. If the first version takes more than two weeks, the scope is wrong.</p>
+    </div>
+    <div class="phil-item">
+      <span class="phil-num">03</span>
+      <h3>Let usage tell you what's next</h3>
+      <p>Watch how people actually use it. The second version should fix what the first version revealed.</p>
+    </div>
   </section>
 
+  <!-- Work -->
+  <section class="work" id="work">
+    <h2 class="section-title">Work</h2>
+    <p class="section-sub">AI tools built at Amazon for real teams with real problems.</p>
+
+    <!-- Project 1: Analytics Agent -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status live">Live</span>
+        <span class="project-year">2025–26</span>
+      </div>
+      <h3 class="project-title">Natural Language Analytics Agent</h3>
+      <p class="project-problem">Marketing, content, and product teams needed data from a warehouse with 90+ column tables — but none of them knew SQL. They'd wait days for an analyst to run a query.</p>
+      <p class="project-solution">Built a chat agent that understands the full data schema — tables, columns, metrics, query patterns. Teams describe what they need in plain English, and the agent writes optimized SQL, executes it against the data warehouse, and returns formatted results. It can email the analysis, save it, or download it — all from the chat.</p>
+      <div class="project-outcome">
+        <div class="outcome-item">
+          <span class="outcome-num">200+</span>
+          <span class="outcome-label">non-technical users enabled</span>
+        </div>
+        <div class="outcome-item">
+          <span class="outcome-num">Days → Seconds</span>
+          <span class="outcome-label">time to insight</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span>Claude</span><span>MCP Protocol</span><span>Redshift</span><span>OAuth2</span><span>Schema Presets</span>
+      </div>
+    </article>
+
+    <!-- Project 2: Audience Simulation Engine -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status building">In Progress</span>
+        <span class="project-year">2026</span>
+      </div>
+      <h3 class="project-title">Audience Simulation Engine</h3>
+      <p class="project-problem">Content acquisition teams buy shows based on gut feel and post-launch analysis. By the time you know a show underperformed with its target audience, the money is already spent.</p>
+      <p class="project-solution">Built a system that constructs data-backed synthetic personas from streaming behavioral data — merging viewing patterns, demographics, and consumer interest signals. K-Means clustering across 5 behavioral dimensions produces validated personas with content identity profiles and commercial value scores. The engine evaluates who a show is for before it's bought.</p>
+      <div class="project-outcome">
+        <div class="outcome-item">
+          <span class="outcome-num">5</span>
+          <span class="outcome-label">behavioral dimensions clustered</span>
+        </div>
+        <div class="outcome-item">
+          <span class="outcome-num">Pre-launch</span>
+          <span class="outcome-label">audience-fit prediction</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span>Python</span><span>scikit-learn</span><span>Redshift</span><span>K-Means</span><span>Hierarchical Clustering</span>
+      </div>
+      <a href="https://github.com/ybhagaab/Audience-Simulation-Engine" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+    </article>
+
+    <!-- Project 3: BotBoy -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status live">Live</span>
+        <span class="project-year">2026</span>
+      </div>
+      <h3 class="project-title">BotBoy — AI Productivity Tracker</h3>
+      <p class="project-problem">Knowledge workers context-switch dozens of times a day across browser, Slack, code editors, and email. At the end of the week, they can't reconstruct what they actually worked on or where their time went.</p>
+      <p class="project-solution">Built a local AI system that silently captures activity from Chrome (via CDP), desktop apps (AppleScript), clipboard, and Slack (Socket Mode). Items are auto-classified into knowledge nodes using embeddings + LLM. The chat agent has full authority to modify its own dashboard UI — it reads the frontend code, understands context, and adapts the layout to each user's data.</p>
+      <div class="project-outcome">
+        <div class="outcome-item">
+          <span class="outcome-num">4</span>
+          <span class="outcome-label">capture sources (browser, apps, clipboard, Slack)</span>
+        </div>
+        <div class="outcome-item">
+          <span class="outcome-num">Self-evolving</span>
+          <span class="outcome-label">agent-controlled UI</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span>TypeScript</span><span>Qwen 35B</span><span>vLLM</span><span>SQLite</span><span>Chrome CDP</span><span>ECS (4×A10G)</span>
+      </div>
+      <a href="https://github.com/ybhagaab/botboy" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+    </article>
+
+    <!-- Project 4: SQL Client MCP Online -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status live">Live</span>
+        <span class="project-year">2025–26</span>
+      </div>
+      <h3 class="project-title">SQL Client MCP — Cloud Infrastructure</h3>
+      <p class="project-problem">AI chat agents are great at conversation but can't access real business data. There was no secure, production-grade bridge between AI assistants and data warehouses.</p>
+      <p class="project-solution">Built an online MCP (Model Context Protocol) server on AWS Lambda that implements the full Streamable HTTP spec — session management, tool discovery, and execution. AI agents send natural language, the server executes SQL against the data warehouse, and returns formatted results. Includes OAuth2 auth, SQL injection protection, schema context presets from S3, and X-Ray tracing.</p>
+      <div class="project-stack">
+        <span>AWS Lambda</span><span>API Gateway</span><span>MCP Protocol</span><span>Redshift</span><span>CDK</span><span>X-Ray</span>
+      </div>
+    </article>
+
+    <!-- Project 5: SQL Client MCP Local -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status shipped">Published</span>
+        <span class="project-year">2025</span>
+      </div>
+      <h3 class="project-title">SQL Client MCP — Developer Tool</h3>
+      <p class="project-problem">Developers using AI coding assistants (Kiro, Claude Desktop) couldn't connect them to their team's databases. Every query required manual copy-paste between the AI and a SQL client.</p>
+      <p class="project-solution">Built a local MCP server that runs on your machine and connects AI assistants directly to PostgreSQL and Redshift. Supports 3 auth methods (direct, IAM, Secrets Manager), SSH tunnels, and team schema presets — markdown files that teach the AI your domain's tables, filters, and query patterns before it writes SQL.</p>
+      <div class="project-stack">
+        <span>Node.js</span><span>MCP SDK</span><span>PostgreSQL</span><span>Redshift</span><span>IAM</span><span>npm</span>
+      </div>
+      <a href="https://github.com/ybhagaab/sql-context-mcp" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+    </article>
+
+    <!-- Project 6: DubGround -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-status building">In Development</span>
+        <span class="project-year">2026</span>
+      </div>
+      <h3 class="project-title">DubGround — AI Video Dubbing</h3>
+      <p class="project-problem">Dubbing a video into another language requires expensive voice actors and manual audio engineering per language. A 10-minute video can take days and thousands of dollars to dub.</p>
+      <p class="project-solution">Built an end-to-end pipeline: upload a video → detect speakers (pyannote) → transcribe (Omnilingual 7B) → contextual translation (Qwen 3.5 4B with overlapping-window batching) → clone each speaker's voice (Qwen3-TTS) → generate dubbed audio. Each speaker's vocal identity is preserved across languages. Alternative SeamlessM4T speech-to-speech path skips the pipeline entirely. TTS uses lazy-loaded models with LRU eviction on a single T4 GPU.</p>
+      <div class="project-outcome">
+        <div class="outcome-item">
+          <span class="outcome-num">6</span>
+          <span class="outcome-label">AI models in the pipeline</span>
+        </div>
+        <div class="outcome-item">
+          <span class="outcome-num">Minutes</span>
+          <span class="outcome-label">not days, per video</span>
+        </div>
+      </div>
+      <div class="project-stack">
+        <span>React</span><span>FastAPI</span><span>pyannote</span><span>Qwen TTS</span><span>SeamlessM4T</span><span>ECS GPU</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- PM Evolution -->
+  <section class="approach" id="approach">
+    <h2 class="section-title">Reinventing Product Management</h2>
+    <p class="section-sub">What if a PM could go from idea to working demo in hours, not sprints?</p>
+
+    <div class="approach-grid">
+      <div class="approach-card">
+        <span class="approach-num">01</span>
+        <h3>Requirements from Code + Data</h3>
+        <p>Instead of writing requirements from scratch, the AI analyzes the existing codebase and real usage data to generate structured requirement documents — with acceptance criteria, edge cases, and technical constraints already filled in.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-num">02</span>
+        <h3>Automated Design & Task Breakdown</h3>
+        <p>Requirements flow into design documents and implementation task lists. Each task is scoped, ordered by dependency, and ready for execution — no sprint planning meeting needed.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-num">03</span>
+        <h3>Working Demo from Spec</h3>
+        <p>The AI executes each task against the actual codebase — writing production code, not prototypes. The PM reviews each step, and at the end has a working feature branch ready for engineering review.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-num">04</span>
+        <h3>Data Analysis on Demand</h3>
+        <p>Need to validate an assumption? The analytics agent pulls real data mid-workflow. Need a benchmark for the PRD? It queries the warehouse and fills in the numbers. Data isn't a separate step — it's embedded in the process.</p>
+      </div>
+    </div>
+
+    <div class="approach-proof">
+      <p>Applied this workflow to ship <strong>9 feature specs</strong> for a production Android app — from account recovery flows to subscription metrics. Each spec went from requirement document to working code with tests.</p>
+    </div>
+  </section>
+
+  <!-- Personal Projects -->
+  <section class="personal" id="personal">
+    <h2 class="section-title">Side Projects</h2>
+    <p class="section-sub">Things I build because I want them to exist.</p>
+
+    <div class="personal-grid">
+      <div class="personal-card">
+        <h3>NeewBrowser</h3>
+        <p>A privacy-first Android TV browser built on GeckoView and published on Google Play. No tracking, no telemetry, built-in uBlock Origin, smart User-Agent for PiP, and a full Leanback experience with DPAD cursor navigation. 43 releases shipped.</p>
+        <div class="project-stack small">
+          <span>Java</span><span>GeckoView</span><span>WebExtensions</span><span>Android TV</span>
+        </div>
+        <div class="project-link-group">
+          <a href="https://play.google.com/store/apps/details?id=com.neew.browser" target="_blank" rel="noopener" class="project-link">Google Play →</a>
+          <a href="https://github.com/indianpineappl/neewbrowser" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+        </div>
+      </div>
+      <div class="personal-card">
+        <h3>Domain-Specific AI Agents</h3>
+        <p>Built 3 conversational agents for specialized domains — including a diabetes research assistant and business-specific chat agents. Explored different retrieval strategies: one using BM25 keyword search, another using RAG-based vector retrieval. Implemented a 3-layer memory management system (working memory, episodic memory, semantic memory) to ensure accurate responses with minimal token usage.</p>
+        <div class="project-stack small">
+          <span>Python</span><span>BM25</span><span>RAG</span><span>Vector DB</span><span>Memory Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Built by <a href="https://phonetool.amazon.com/users/ybhagaab" target="_blank" class="footer-link">ybhagaab</a> · Powered by Claude &amp; Kiro</p>
-    <p class="footer-sub">All products built as side projects at Amazon</p>
+    <div class="footer-content">
+      <p class="footer-name">AB Bhagat</p>
+      <p class="footer-tagline">Product Leader · AI Builder</p>
+      <div class="footer-links">
+        <a href="https://github.com/ybhagaab" target="_blank" rel="noopener">GitHub (work)</a>
+        <a href="https://github.com/indianpineappl" target="_blank" rel="noopener">GitHub (personal)</a>
+      </div>
+      <p class="footer-note">Built with Claude & Kiro</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
